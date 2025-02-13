@@ -37,7 +37,7 @@ func main() {
     })
 
     handler := c.Handler(r)
-    log.Fatal(http.ListenAndServe(":8080", handler))
+    log.Fatal(http.ListenAndServe(":3000", handler))
 }
 
 func findPathHandler(w http.ResponseWriter, r *http.Request) {
